@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+  <html lang="en">
+<meta charset="UTF-8">
+<head>
+<meta name="viewport" content="width+device+width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie+edge">
+<title>Random Password Generator</title>
+
+<Script src="script.js" defer></Script>
+<link rel="stylesheet" href="style.css">
+  </head>
+<body>
+<div class="container">
+<h2>Random Password Generator App</h2>
+<div class="result-container">
+    <span id="result"></span>
+    <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+    </button>
+</div>
+<div class="settings">
+ <div class="setting">
+<label>password length (max:20)</label>   
+<input type="number" id="length" min="4" max="20" value="20"/> 
+</div>
+<div class="setting">
+    <label>include uppercase letters</label>   
+    <input type="checkbox" id="uppercase" checked class="toggle"/> 
+    </div>
+<div class="setting">
+        <label>include lowercase letters</label>   
+        <input type="checkbox" id="lowercase" checked class="toggle"/> 
+        </div>
+ <div class="setting">
+            <label>include numbers</label>   
+            <input type="checkbox" id="numbers" checked class="toggle"/> 
+            </div>
+<div class="setting">
+    <label>include symboles</label>   
+        <input type="checkbox" id="symbols" checked class="toggle"/> 
+                </div>
+</div>
+<button class="btn btn-large" id="generate">
+Generate password
+</button>
+</div>
+</body>
+   </html>
